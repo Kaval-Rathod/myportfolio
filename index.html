@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaval Rathod - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Kaval Rathod</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills-showcase">Skills / Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#CV">Download CV</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+        </section>
+
+        <section id="skills-showcase">
+          <div class="portfolio-container">
+            <h2 class="for_filter">Skills</h3>
+            <div class="portfolio-buttons">
+              <button class="filter-btn" data-filter="html" style="line-height:1.5rem">🛠️<br>HTML</button>
+              <button class="filter-btn" data-filter="css" style="line-height:1.5rem">🎨<br>CSS</button>
+              <button class="filter-btn" data-filter="js" style="line-height:1.5rem">💻<br>JavaScript</button>
+              <button class="filter-btn" data-filter="java" style="line-height:1.5rem">☕<br>Java</button>
+              <button class="filter-btn" data-filter="java" style="line-height:1.5rem">⚛️<br>React</button>
+              <button class="filter-btn" data-filter="python" style="line-height:1.5rem">🐍<br>Python</button>
+              <button class="filter-btn" data-filter="uiux" style="line-height:1.5rem">📱<br>UI/UX</button>
+              <button class="filter-btn active" data-filter="all" style="line-height:1.5rem">🗿<br>All Projects</button>
+            </div>
+            <h2 class="for_filter">Project Showcase</h3>
+            <div class="projects">
+              <div class="project-item html">
+                <a href="https://kaval-rathod.github.io/Snack-Game/">
+                  <img src="source/snackGame.webp" alt="HTML Project">
+                </a>
+                <div class="project-title">Snack Game</div>
+              </div>
+              <div class="project-item html">
+                <a href="https://kaval-rathod.github.io/Tik-Tac-Toe/">
+                <img src="source/tic-tac-toe.webp" alt="HTML Project">
+              </a>
+                <div class="project-title">Tic Tac Toe</div>
+              </div>
+              <div class="project-item js">
+                <img src="path/to/js-project-image.jpg" alt="JavaScript Project">
+                <div class="project-title">JavaScript Project</div>
+              </div>
+              <div class="project-item java">
+                <img src="path/to/java-project-image.jpg" alt="Java Project">
+                <div class="project-title">Java Project</div>
+              </div>
+              <div class="project-item python">
+                <img src="path/to/python-project-image.jpg" alt="Python Project">
+                <div class="project-title">Python Project</div>
+              </div>
+              <div class="project-item uiux">
+                <img src="path/to/uiux-project-image.jpg" alt="UI/UX Project">
+                <div class="project-title">UI/UX Project</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <div class="footer-container">
+                <div class="contact-me">
+                    <h2>Contact Me</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <!-- <label for="name">Name:</label> -->
+                            <input type="text" id="name" placeholder="Enter your name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="email">Email:</label> -->
+                            <input type="email" id="email" placeholder="Enter your email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" placeholder="Message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn"><b>Send Message</b></button>
+                      </form>
+                      <a href="source/tic-tac-toe.webp" download="source/tic-tac-toe.webp"><button type="Downloadcv" class="download-cv"><b>Download CV</b></button></a>
+                </div>
+                <div class="footer-info">
+                    <div class="social-media">
+                        <!-- <a href="#" class="social-icon"><span class="sr-only">Facebook</span>FB</a> -->
+                        <a href="https://www.linkedin.com/in/kaval-rathod/" class="social-icon"><img src="source/linkedin.svg" alt=""></a>
+                        <a href="https://x.com/kaval_rathod" class="social-icon"><img src="source/twitter.svg" alt=""></a>
+                    </div>
+                    <p>&copy; 2024 Kaval Rathod. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="cursor-follower"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
